@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1920px;
+    height: 44px;
+    gap: 24px;
+    position: absolute;
+    top: 8px;
+    background-color: #F5F5F7CC;
+}
+.header_links{
+    width: fit-content;
+    height: fit-content;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 60px;
+    letter-spacing: -0.28px;
+    color: black;
+}
+.main{
+    width: 1920px;
+    height: fit-content;
+    position: absolute;
+    top: 96px;
+    gap: 12px;
+}
+.iphone16pro-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+    width: 1920px;
+    height: 692px;
+}
+.iphone16pro{
+    position: absolute;
+    left: -544px;
+    width: 3008px;
+    height: 692px;
+    background: url(iphone16pro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.iphone16pro_texts{
+    width: 405px;
+    height: 172px; /* hug bolgono */
+    margin-top: 55px;
+    z-index: 3;
+    background-color: black;
+}
+.iphone16-container{
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+    width: 1920px;
+    height: 692px;
+}
+.iphone16{
+    position: absolute;
+    left: -544px;
+    width: 3008px;
+    height: 692px;
+    background: url(iphone16.jpg);
+    background-size: cover;
+    background-position: center;
 }
