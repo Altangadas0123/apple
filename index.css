@@ -160,6 +160,7 @@ body{
 }
 .products{
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -219,6 +220,95 @@ body{
     background-clip: text;
     color: transparent;
 }
+.airpods-text-1{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #F5F5F7;
+    margin-top: 401px;
+}
+.airpods-text-2{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F5F5F7;
+    margin-top: 2px;
+}
+.airpods-buttons{
+    margin-top: 10px;
+}
+.watch-text_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 58px;
+}
+.apple-and-watch{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.big-apple-icon{
+    width: 26.35px;
+    height: 32px;
+}
+.big-watch-text{
+    font-family: "Inter", sans-serif;
+    width: 121px;
+    height: 39px;
+    font-weight: 700px;
+    font-size: 32px;
+    color: #000000;
+}
+.watch-text-thinstant{
+    margin-top: 4px;
+}
+.watch-buttons{
+    margin-top: 16px;
+}
+.mac-big-text{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #1D1D1F;
+    margin-top: 48px;
+}
+.mac-text-lean{
+    margin-top: 2px;
+}
+.mac-buttons{
+    margin-top: 10px;
+}
+.tradein-logotext-margin{
+    margin-top: 58.42px;
+}
+.trade-text-margin{
+    margin-top: 4px;
+    max-width: 322px;
+}
+.trade-button{
+    margin-top: 16px;
+    display: flex;
+    width: 167px;
+    height: 40px;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background-color: #0071E3;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.card-logotext-margin{
+    margin-top: 58px;
+}
+.card-text-margin{
+    margin-top: 4px;
+    max-width: 280px;
+}
+.card-buttons{
+    margin-top: 16px;
+}
 .ipad{
     background-image: url(ipad-backgroud.jpg);
     background-repeat: no-repeat;
@@ -232,14 +322,27 @@ body{
     background-position: center;
 }
 .watch{
-    background-color: #F5F5F7;
+    background-image: url(watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .mac{
-    background-color: #F5F5F7;
+    background-image: url(macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .trade{
-    background-color: #F5F5F7;
+
+    background-image: url(trade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .card{
-    background-color: #F5F5F7;
+    background-image: url(card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
