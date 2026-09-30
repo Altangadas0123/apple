@@ -50,6 +50,9 @@ body{
   color: #000000; 
 }
 .shopping_bag-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 44px;
 }
@@ -57,6 +60,17 @@ body{
     width: 15px;
     height: 15px;
 }
+/* hidden 123456789012345678901234567890-1234567890*/
+.menu-button{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+.donation_text{
+    display: none;
+}
+/* hidden 123456789012345678901234567890-1234567890*/
 .main{
     display: flex;
     flex-direction: column;
@@ -309,6 +323,30 @@ body{
 .card-buttons{
     margin-top: 16px;
 }
+/* 
+ipad
+airpods
+watch
+small-airpods
+small-watch
+mac
+apple_for_small_business
+carrier_deals_at_apple
+trade
+card
+*/
+.small-airpods{
+    display: none;
+}
+.small-watch{
+    display: none;
+}
+.apple_for_small_business{
+    display: none;
+}
+.carrier_deals_at_apple{
+    display: none;
+}
 .ipad{
     background-image: url(ipad-backgroud.jpg);
     background-repeat: no-repeat;
@@ -327,8 +365,32 @@ body{
     background-size: cover;
     background-position: center;
 }
+.small-airpods{
+    background-image: url(small-airpods.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.small-watch{
+    background-image: url(small-watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .mac{
     background-image: url(macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.apple_for_small_business{
+    background-image: url(apple_for_small_business.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carrier_deals_at_apple{
+    background-image: url(carrier_deals_at_apple.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -418,3 +480,116 @@ body{
 span{
     font-weight: 700;
 }
+
+
+
+@media (max-width: 768px) {
+.header{
+    height: 48px;
+    margin-top: 0px;
+}
+.apple_logo-container{
+    margin-right: auto;
+}
+.header_links{
+    display: none;
+}
+/* hide from tablet */
+.ipad{
+    display: none;
+}
+.airpods{
+    display: none;
+}
+.watch{
+    display: none;
+}
+.card{
+    display: none;
+}
+/* unhide */
+.small-airpods{
+    display: flex;
+}
+.small-watch{
+    display: flex;
+}
+.apple_for_small_business{
+    display: flex;
+}
+.carrier_deals_at_apple{
+    display: flex;
+}
+.menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+.menu-icon{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    color: #000000;
+}
+.search_bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+.shopping_bag-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+.apple_logo-container{
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+.donation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    margin: 12px 0px;
+}
+.donation_text{
+    display: flex;
+    width: 444px;
+    background-color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1D1D1F;
+}
+.main{
+    margin-top: 0px;
+}
+
+
+
+}
+
+
+
+/*  grid class nernuud
+ipad
+airpods
+watch
+small-airpods
+small-watch
+mac
+apple_for_small_business
+carrier_deals_at_apple
+trade
+card
+*/
