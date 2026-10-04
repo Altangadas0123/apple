@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.batman {
+  gap: 20px;
+  display: flex;
+  width: 4170px;
+  height: 258px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  height: 100%;
+  width: 417px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: var(--bg); */
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: slider 60s linear infinite;
+  animation-delay: calc((56.5s / 10) * (var(--item) - 6.5));
+}
+
+button {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+}
+
+@keyframes slider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -417px;
+  }
+}
+
+.batman:hover .item {
+  filter: grayscale(1);
+  animation-play-state: paused;
+}
+
+.batman .item:hover {
+  filter: grayscale(0);
+}
+
+.item:hover button {
+  opacity: 1;
+  margin-top: 0;
+}
+ 

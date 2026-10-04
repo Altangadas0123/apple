@@ -415,17 +415,54 @@ card
   background-size: cover;
   background-position: center;
 }
-
+.carousels-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .carousel-1-container {
   display: flex;
+  justify-content: space-around;
   gap: 16px;
   width: 100vw;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
-.carousels-1{
+.carousels-tablist .dot{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: grey;
+}
 
+.dot:active {
+  background-color: black;
 }
+.carousels-tablist .dot:focus {
+  background-color: #000000;
+  outline: none;
+}
+
+
+
+.carousels-container:has(#img-item1:target) .dot[href="#img-item1"],
+.carousels-container:has(#img-item2:target) .dot[href="#img-item2"],
+.carousels-container:has(#img-item3:target) .dot[href="#img-item3"],
+.carousels-container:has(#img-item4:target) .dot[href="#img-item4"],
+.carousels-container:has(#img-item5:target) .dot[href="#img-item5"],
+.carousels-container:has(#img-item6:target) .dot[href="#img-item6"],
+.carousels-container:has(#img-item7:target) .dot[href="#img-item7"],
+.carousels-container:has(#img-item8:target) .dot[href="#img-item8"],
+.carousels-container:has(#img-item9:target) .dot[href="#img-item9"],
+.carousels-container:has(#img-item10:target) .dot[href="#img-item10"] {
+  background-color: #000000;
+}
+
+
+
 .img-items {
   scroll-snap-align: center;
 
@@ -440,10 +477,11 @@ card
 }
 .carousels-tablist{
     display: flex;
-    gap: 20px;
-    width: 20px;
-    height: 20x;
-    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    height: 8px;
+    margin: 12px 0px;
 }
 
 .img_1 {
@@ -503,6 +541,152 @@ card
 span {
   font-weight: 700;
 }
+/* asdfghjklwertyuszxcvbndfghjertyuidfghjdfghjertyuirftghy */
+
+/* .carousels-2{
+  display: flex;
+  width: 1654px;
+  height: 236px;
+} */
+
+/* .batman {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  width: 1654px;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} */
+
+/* .item {
+  height: 100%;
+  width: 417px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: slider 60s linear infinite;
+  /* animation-delay: calc((56.5s / 10) * (var(--item) - 6.5)); */
+  /* animation-delay: calc((56.5s / 10) * (var(--item) - 6.5));
+}  */
+
+button {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+}
+
+/* @keyframes slider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -417px;
+  }
+} */
+
+/* clllllfdsfg */
+.carousels-2 {
+  display: flex;
+  width: 100%;
+  height: 236px;
+}
+
+.batman {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 417px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: slider 60s linear infinite;
+  animation-delay: calc(-6s * (var(--item) - 1));
+}
+
+@keyframes slider {
+  from { transform: translateX(3913px); }
+  to   { transform: translateX(-417px); }
+}
+
+
+.batman:has(.item:hover) .item {
+  animation-play-state: paused;
+}
+
+.batman:has(.item:hover) .item:not(:hover) {
+  filter: grayscale(1);
+}
+
+button {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+}
+
+.item:hover button {
+  opacity: 1;
+  margin-top: 0;
+}
+/* clllllfdsfg */
+
+
+/* 
+.batman:hover .item {
+  filter: grayscale(1);
+  animation-play-state: paused;
+}
+
+.batman .item:hover {
+  filter: grayscale(0);
+}
+
+.item:hover button {
+  opacity: 1;
+  margin-top: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+/* asdfghjklwertyuszxcvbndfghjertyuidfghjdfghjertyuirftghy */
+
+
+
+
 
 @media (max-width: 768px) {
 
