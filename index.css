@@ -60,7 +60,7 @@ body {
   width: 15px;
   height: 15px;
 }
-/* hidden 123456789012345678901234567890-1234567890*/
+
 .menu-button {
   display: none;
 }
@@ -70,7 +70,7 @@ body {
 .donation_text {
   display: none;
 }
-/* hidden 123456789012345678901234567890-1234567890*/
+
 .main {
   display: flex;
   flex-direction: column;
@@ -328,18 +328,7 @@ body {
 .card-buttons {
   margin-top: 16px;
 }
-/* 
-ipad
-airpods
-watch
-small-airpods
-small-watch
-mac
-apple_for_small_business
-carrier_deals_at_apple
-trade
-card
-*/
+
 .small-airpods {
   display: none;
 }
@@ -537,45 +526,9 @@ card
 span {
   font-weight: 700;
 }
-/* asdfghjklwertyuszxcvbndfghjertyuidfghjdfghjertyuirftghy */
 
-/* .carousels-2{
-  display: flex;
-  width: 1654px;
-  height: 236px;
-} */
 
-/* .batman {
-  display: flex;
-  gap: 20px;
-  display: flex;
-  width: 1654px;
-  height: 100%;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-} */
 
-/* .item {
-  height: 100%;
-  width: 417px;
-  flex-shrink: 0;
-  position: absolute;
-  left: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-image: var(--bg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  animation: slider 60s linear infinite;
-  /* animation-delay: calc((56.5s / 10) * (var(--item) - 6.5)); */
-/* animation-delay: calc((56.5s / 10) * (var(--item) - 6.5));
-}  */
 
 button {
   opacity: 0;
@@ -583,16 +536,7 @@ button {
   margin-top: 10px;
 }
 
-/* @keyframes slider {
-  from {
-    left: 100%;
-  }
-  to {
-    left: -417px;
-  }
-} */
 
-/* clllllfdsfg */
 .carousels-2 {
   display: flex;
   width: 100%;
@@ -699,24 +643,7 @@ button {
   opacity: 1;
   margin-top: 0;
 }
-/* clllllfdsfg */
 
-/* 
-.batman:hover .item {
-  filter: grayscale(1);
-  animation-play-state: paused;
-}
-
-.batman .item:hover {
-  filter: grayscale(0);
-}
-
-.item:hover button {
-  opacity: 1;
-  margin-top: 0;
-} */
-
-/* asdfghjklwertyuszxcvbndfghjertyuidfghjdfghjertyuirftghy */
 
 @media (max-width: 768px) {
   .products {
@@ -810,7 +737,7 @@ button {
     align-items: center;
     overflow: hidden;
   }
-  /* hide from tablet */
+
   .ipad-air-product-mobile {
     display: none;
   }
@@ -826,7 +753,7 @@ button {
   .card {
     display: none;
   }
-  /* show */
+
   .small-airpods {
     display: flex;
   }
@@ -955,8 +882,7 @@ button {
   }
 }
 
-@media (max-width: 440px) {
-  /* daraa 390px bolgono */
+@media (max-width: 390px) {
   .header {
     width: 100%;
     height: 48px;
@@ -1065,7 +991,7 @@ button {
   .trade {
     display: flex;
   }
-  /* 123456789 */
+
   .ipad {
     display: none;
   }
@@ -1220,6 +1146,5 @@ button {
   }
   .steam-text1 {
     text-wrap: wrap;
-    /* background-color: rebeccapurple; */
   }
 }
